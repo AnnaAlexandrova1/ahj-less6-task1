@@ -82,8 +82,7 @@
 
             .form {
                 border-radius: 3px;
-                margin-top: auto;
-                display: none;
+                margin-top: 5px;
 
                 .textarea {
                     resize: none;
@@ -91,7 +90,7 @@
                     border-radius: 3px;
                     border: none;
                     background: white;
-                    padding: 10px;
+                    padding: 5px;
                     width: 100%;
 
                     &:focus {
@@ -101,9 +100,11 @@
                 }
 
                 .buttons {
+                    margin-top: 5px;
                     display: flex;
 
                     .add_item-btn {
+                        padding: 0 10px;
                         background: rgb(13, 136, 218);
                         border: none;
                         height: 35px;
@@ -153,6 +154,10 @@
                 }
             }
 
+            .hidden {
+                display: none;
+            }
         }
+
     }
 }
