@@ -1,6 +1,8 @@
-// Добавить новую задачу
-import addTask from './addTask';
-import removeTask from './removeTask';
+import Board from './Board';
+import Logic from './Logic';
 
-addTask();
-removeTask();
+const container = document.querySelector('.container');
+const board = new Board(container);
+
+const logic = new Logic(board);
+logic.init();
