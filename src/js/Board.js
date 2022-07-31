@@ -17,21 +17,21 @@ export default class Board {
 
   static get markup() {
     return `
-    <div class="board_item item_todo">
+    <div class="board_item item_todo" data-item = "todo">
         <h1 class="title">TODO</h1>
             <div class="add_btn">
                 <span> + </span>
                 Add card
             </div>
     </div>
-    <div class="board_item item_progress">
+    <div class="board_item item_progress" data-item = "in-progress">
         <h1 class="title">IN PROGRESS</h1>
             <div class="add_btn">
                 <span> + </span>
                 Add card
             </div>
     </div>
-    <div class="board_item item_done">
+    <div class="board_item item_done" data-item = "done">
         <h1 class="title">DONE</h1>
             <div class="add_btn">
                 <span> + </span>

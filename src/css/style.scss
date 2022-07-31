@@ -23,7 +23,6 @@
         display: flex;
         justify-content: center;
         width: 80%;
-        border: 2px solid red;
 
         &_item {
             display: flex;
@@ -31,6 +30,7 @@
             align-self: baseline;
             max-width: 30%;
             width: 100%;
+            min-height: 80vh;
             background-color: rgba(0, 0, 0, .5);
             margin: 0 15px;
             padding: 10px;
@@ -61,23 +61,36 @@
                     font-size: 14px;
                     outline: none;
                     border: none;
+
+
+
+                    .removeItem {
+                        position: absolute;
+                        border: none;
+                        top: 5px;
+                        right: 5px;
+                        z-index: 9;
+                        text-decoration: none;
+                        width: 20px;
+                        height: 20px;
+                        line-height: 1;
+                        text-align: center;
+                        color: grey;
+                        font-size: 19px;
+                        font-weight: 700;
+                        background-image: url('../img/cross.svg');
+                    }
                 }
 
-                .removeItem {
+                .dragged {
                     position: absolute;
-                    top: 5px;
-                    right: 5px;
-                    z-index: 9;
-                    text-decoration: none;
-                    width: 20px;
-                    height: 20px;
-                    line-height: 1;
-                    text-align: center;
-                    color: grey;
-                    font-size: 19px;
-                    font-weight: 700;
-                    background-image: url('../img/cross.svg');
+                    //z-index: 999;
+                    pointer-events: none;
+                    background: lightblue;
+                    border: 10px solid red
                 }
+
+
             }
 
             .form {

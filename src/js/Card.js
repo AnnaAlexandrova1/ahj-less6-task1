@@ -10,8 +10,8 @@ export default class Card {
   static template(task) {
     return `
     <div draggable="true" class="list_item">
-    <span clas="task_title">${task}</span>
-    <button class="removeItem hidden"></button>
+     <span class="task_title">${task}</span>
+     <button class="removeItem hidden"></button>
     </div>`;
   }
 
